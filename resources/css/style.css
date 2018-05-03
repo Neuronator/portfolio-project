@@ -16,12 +16,19 @@ a:visited {
     color: #02b3e4;
     border-bottom: 3px solid transparent;
 
-    transition: border-bottom 0.5s;
+    transition: color 0.5s, border-bottom 0.5s;
 }
 
 a:active,
 a:hover {
-    border-bottom: 3px solid #02b3e4;
+    border-bottom: 3px solid #0083a7;
+    color: #0083a7;
+}
+
+.disabled-link {
+    text-decoration: line-through;
+    color: #6f6f6f;
+    cursor: pointer;
 }
 
 /*Layout and Containers --------------------------- */
