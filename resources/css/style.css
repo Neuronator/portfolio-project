@@ -6,7 +6,7 @@
 
 html {
     font-family: "Muli", "Arial", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -59,12 +59,12 @@ header .container {
 }
 
 .title h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
 .title h2 {
-    font-size: .8rem;
+    font-size: 0.9rem;
     font-weight: 200;
 }
 
@@ -138,6 +138,13 @@ header:after {
 
 /* III. Featured Works ---------------------------- */
 
+.feature-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .featured h3 {
     text-transform: uppercase;
     text-align: left;
@@ -156,6 +163,8 @@ header:after {
 
     padding: 10px;
     margin: 10px 10px;
+
+    max-width: 320px;
 }
 
 .feature-card img {
@@ -168,8 +177,7 @@ header:after {
 }
 
 .feature-card a {
-    font-size: 0.9em;
-
+    font-size: 0.8em;
 }
 
 /* IV. Footer ------------------------------------- */
@@ -178,7 +186,7 @@ footer {
     background-color: #2d3c49;
     color: #02b3e4;
 
-    height: 80px;
+    height: 70px;
     padding: 10px 20px;
 }
 
@@ -193,7 +201,7 @@ footer .container {
 
 .footer-links {
     margin-left: auto;
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 1rem;
 }
 
@@ -204,61 +212,48 @@ footer .container {
 
 /* !! Media Queries ------------------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
     .logo img {
         width: 70px;
         height: auto;
         padding-top: 10px;
     }
-    
-    .title h1 {
-        font-size: 1.5rem;
-    }
-
-    .title h2 {
-        font-size: 1rem;
-    }
-
-    .feature-box {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .feature-card {
-        width: 45%;
-    }
-
-    .footer-text {
-        font-size: 0.75rem;
-    }
-    .footer-links {
-        font-size: 1.5rem
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .logo img {
-        width: 75px;
-        height: auto;
-        padding-top: 15px;
-    }
-    
     .title h1 {
         font-size: 1.8rem;
     }
     .title h2 {
         font-size: 1.2rem;
     }
-    .feature-box {
-        display: flex;
+    .feature-card {
+        width: 45%;
     }
-
     .footer-text {
         font-size: 0.8rem;
     }
     .footer-links {
         font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+    .logo img {
+        width: 75px;
+        height: auto;
+        padding-top: 15px;
+    }
+    .feature-card {
+        width: 30%
+    }
+    .footer-links {
+        font-size: 1.6rem;
+    }
+    footer {
+        height: 75px;
     }
 }
