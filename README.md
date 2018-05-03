@@ -1,5 +1,6 @@
 # portfolio-project
-udacity front end nanodegree portfolio project
+Udacity Front-End Nanodegree Portfolio Project
+<a href="https://carlo-bruno.github.io/portfolio-project/">Live Site</a>
 
 ## Description
 a simple portfolio project based on a mockup.
